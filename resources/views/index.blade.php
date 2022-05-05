@@ -17,12 +17,12 @@
             </div>
             <ul class="nav">
                 <li>
-                    <div class="linha"><a href="#">Ler cartas públicas</a></div>
+                    <div class="linha"><a href="<?= url('/cartas-publicas') ?>">Ler cartas públicas</a></div>
                 </li>
                 <li>
-                    <div class="linha"><a href="/posttome/index.html#write">Escrever uma carta</a></div>
+                    <div class="linha"><a href="<?= url('/escrever') ?>">Escrever uma carta</a></div>
                 </li>
-                <button><a href="/posttome/register.html">entrar</a></button>
+                <button><a href="/login">entrar</a></button>
             </ul>
             <button id="btn-mobile">
                 <span id="hamburguer">
@@ -52,31 +52,32 @@
                 <h3>Receber em:</h3>
                 <ul class="time-receive data">
                     <li class="bttn ayr">
-                        <input type="radio" id="ayr">
+                        <input name="tempo" type="radio" id="ayr">
                         <label for="ayr">1 ano</label>
                     </li>
                     <li class="bttn thryrs">
-                        <input type="radio" id="thryrs">
+                        <input name="tempo" type="radio" id="thryrs">
                         <label for="thryrs">3 anos</label>
                     </li>
                     <li class="bttn fvyrs">
-                        <input type="radio" id="fvyrs">
+                        <input name="tempo" type="radio" id="fvyrs">
                         <label for="fvyrs">5 anos</label>
                     </li>
                     <li class="bttn persdate">
+                        <input name="tempo" type="radio" id="custom">
                         <label for="persdate">Escolher data: </label>
-                        <input type="date" id="persdate" name="persdate">
+                        <input name="tempo" type="date" id="persdate" name="persdate">
                     </li>
                 </ul>
                 <br/>
                 <h3>Sua carta será:</h3>
                 <ul class="time-receive data">
                     <li class="bttn ayr">
-                        <input type="radio" id="pub_anon">
+                        <input name="letter" type="radio" id="pub_anon">
                         <label for="pub_anon">Pública e anônima</label>
                     </li>
                     <li class="bttn thryrs">
-                        <input type="radio" id="privt">
+                        <input name="letter" type="radio" id="privt">
                         <label for="privt">Privada</label>
                     </li>
                 </ul>
