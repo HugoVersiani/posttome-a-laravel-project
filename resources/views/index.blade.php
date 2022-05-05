@@ -13,7 +13,7 @@
     <section>
         <nav id="mainNav">
             <div class="logo">
-                <a href="/posttome/index.html"><img src="img/logotipo.png" alt="Logotipo da posttome" width="110"></a>
+                <a href="/posttome/index.html"><img src="{{asset('images/logotipo.png')}}" alt="Logotipo da posttome" width="110"></a>
             </div>
             <ul class="nav">
                 <li>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div id="write" class="form">
-            <form>
+            <form action="/" method="post">
                 <h3>Escreva para o seu eu do futuro:</h3>
                 <textarea class="form-control" id="inputMessage" placeholder="Querido eu do futuro, " style="height: 12rem">Querido eu do futuro, </textarea>
                 <h3>Receber em:</h3>
@@ -57,13 +57,16 @@
                     </li>
                     <li class="bttn thryrs">
                         <input type="radio" id="thryrs">
-                        <label for="thryrs">2 anos</label>
+                        <label for="thryrs">3 anos</label>
                     </li>
                     <li class="bttn fvyrs">
                         <input type="radio" id="fvyrs">
-                        <label for="fvyrs">3 ano</label>
+                        <label for="fvyrs">5 anos</label>
                     </li>
-                    <input type="radio" class="choose">Escolher a data</a>
+                    <li class="bttn persdate">
+                        <label for="persdate">Escolher data: </label>
+                        <input type="date" id="persdate" name="persdate">
+                    </li>
                 </ul>
                 <br/>
                 <h3>Sua carta será:</h3>
@@ -78,7 +81,7 @@
                     </li>
                 </ul>
                 <br/>
-                <h3>Sua e-mail:</h3>
+                <h3>Seu e-mail:</h3>
                 <input class="form-control" id="inputEmail" type="email" placeholder="Seu e-mail aqui..." />
                 <input type="submit" value="Enviar para o futuro " class="bttn-enviar">
             </form>

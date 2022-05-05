@@ -104,6 +104,7 @@ body {
         width: 40vw;
     }
     .form {
+        padding: 30px 20px;
         margin-top: 30px;
         position: fixed;
         transition: 1s;
@@ -162,32 +163,51 @@ body {
         width: 200px;
         background-color: whitesmoke;
     }
-    .form h3 {
-        font-size: 0.8rem;
+
+
+    .form h3:first-child {
+        font-weight: bold;
+        font-size: 1rem;
         color: #3a99f8;
-        padding: 5px 10px;
+        padding: 0 0 0 10px;
         font-family: 'Inconsolata', monospace;
     }
+    .form h3{
+        font-weight: bold;
+        font-size: 1rem;
+        color: #3a99f8;
+        padding: 25px 0 10px 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+    
     .form-control {
         color: #3d3d3d;
         border: 1px solid #0070e023;
-        font-size: small;
+        font-size: .9rem;
         font-family: 'Inconsolata', monospace;
         display: block;
-        margin: 10px auto;
+        margin: 10px 10px;
         width: 95%;
         height: 10px;
-        padding: 0px 10px;
+        padding: 10px 10px;
     }
     #inputEmail {
-        height: 23px;
-        margin: 0 auto;
+        height: 40px;
+        margin: 10px 10px;
     }
     .data {
         margin: 0 0 0 5px;
         display:flex;
     }
+    #persdate {
+        color: #0070e09d;
+        width: 150px;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
     .bttn {
+        cursor: pointer;
         margin: 5px;
         background-color: whitesmoke;
         border: 1px solid #0070e023;
@@ -211,18 +231,19 @@ body {
         font-family: 'Inconsolata', monospace;
     }
     .bttn-enviar {
+        cursor: pointer;
         display: block;
         text-align: center;
         margin: 5px auto;
-        width: 95%;
-        height: 30px;
+        width: 30%;
+        height: 40px;
         background-color: #0070E0;
         border: 1px solid #0070E0;
         padding: 5px;
         transition: 1s cubic-bezier(0.42, 0.0, 0.58, 2);
         text-decoration: none;
         color: white;
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-family: 'Inconsolata', monospace;
     }
     .bttn-enviar:hover,
