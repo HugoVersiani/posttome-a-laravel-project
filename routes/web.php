@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+
+
+Route::get('/', 'IndexController@indexHome');
 
 Route::get('/cartas-publicas', function () {
     return view('cartas-publicas');

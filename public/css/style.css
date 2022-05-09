@@ -106,7 +106,9 @@ body {
     .form {
         padding: 30px 20px;
         margin-top: 30px;
-        position: fixed;
+        margin-left: 50px;
+        margin-bottom: 90px;
+        /* position: fixed; */
         transition: 1s;
         left: 51%;
         width: 45vw;
@@ -116,6 +118,20 @@ body {
         box-shadow: 5px 5px 10px rgba(110, 99, 2, 0.363);
     }
     .form:hover {
+        border: 1px solid #a2d0ff;
+        box-shadow: 5px 5px 20px rgba(110, 99, 2, 0.363);
+    }
+
+    .login {
+        padding: 30px 20px;
+        margin: 30px auto 0 auto;
+        transition: 1s;
+        width: 35vw;
+        background-color: whitesmoke;
+        border: 1px solid #1389ff7e;
+        box-shadow: 5px 5px 10px rgba(110, 99, 2, 0.363);
+    }
+    .login:hover {
         border: 1px solid #a2d0ff;
         box-shadow: 5px 5px 20px rgba(110, 99, 2, 0.363);
     }
@@ -173,6 +189,13 @@ body {
         font-family: 'Inconsolata', monospace;
     }
     .form h3{
+        font-weight: bold;
+        font-size: 1rem;
+        color: #3a99f8;
+        padding: 25px 0 10px 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+    .login h3{
         font-weight: bold;
         font-size: 1rem;
         color: #3a99f8;
